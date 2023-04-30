@@ -1,3 +1,8 @@
+"""Документация модуля. Описывает работу классов и функций.
+
+Размещается в верхней части файла (начиная с первой строки).
+"""
+
 from random import randint
 
 from graphic_arts.start_game_banner import run_screensaver
@@ -5,6 +10,7 @@ from graphic_arts.start_game_banner import run_screensaver
 
 def attack(char_name: str, char_class: str) -> str:
     """Return results of using attack function.
+
     Depends on chosen class (warrior/mage/healer).
     """
     if char_class == 'warrior':
@@ -21,6 +27,7 @@ def attack(char_name: str, char_class: str) -> str:
 
 def defence(char_name: str, char_class: str) -> str:
     """Return results of using defence function.
+
     Depends on chosen class (warrior/mage/healer).
     """
     if char_class == 'warrior':
@@ -34,6 +41,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 def special(char_name: str, char_class: str) -> str:
     """Return results of using special function.
+
     Depends on chosen class (warrior/mage/healer).
     """
     if char_class == 'warrior':
@@ -50,6 +58,7 @@ def special(char_name: str, char_class: str) -> str:
 
 def start_training(char_name: str, char_class: str) -> str:
     """Return results of attack/defence/special functions.
+
     Do it unless user type 'skip'.
     """
     if char_class == 'warrior':
